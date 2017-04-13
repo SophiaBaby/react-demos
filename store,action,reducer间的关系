@@ -3,14 +3,14 @@ store,action,reducer间的关系
 // state: 当前的state
 // action: 当前触发的行为, {type: 'xx'}
 // 返回值: 新的state
-var reducer = function(state, action){
-    switch (action.type) {
-        case 'add_todo':
-            return state.concat(action.text);
-        default:
-            return state;
-    }
-};
+        var reducer = function(state, action){
+            switch (action.type) {
+             case 'add_todo':
+                    return state.concat(action.text);
+             default:
+                    return state;
+         }
+        };
 
 // 创建store, 传入两个参数
 // 参数1: reducer 用来修改state
